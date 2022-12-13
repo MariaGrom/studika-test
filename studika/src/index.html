@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Студика">
+  <meta name="keywords" content="html, css, javascript">
+  <meta name="author" content="Мария Громыко">
+  <link rel="stylesheet" href="./pages/index.css">
+
+  <title>Студика</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__main">
+      <button class="header__menu"></button>
+      <img class="header__logo" src="./image/logo.png" alt="Логотип">
+
+
+
+      <div class="header__city dropdown">
+        <button class="header__city-icon dropbtn" onclick="myFunction()"></button>
+        <p class="header__city-name">Москва</p>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Регион, город, населенный пункт" id="myInput" onkeyup="filterFunction()">
+          <a href="#Moscow">Москва</a>
+          <a href="#NotMoscow">НеМосква</a>
+          <a href="#Moscow">Москва</a>
+          <a href="#NotMoscow">НеМосква</a>
+          <a href="#Moscow">Москва</a>
+          <a href="#NotMoscow">НеМосква</a>
+          <a href="#Moscow">Москва</a>
+          <a href="#NotMoscow">НеМосква</a>
+        </div>
+      </div>
+
+
+
+      <form class="header__search">
+        <div class="header__icon_search"></div>
+        <input class="header__input" type="text" name="search" id="search"
+          placeholder="Учебное заведение, специальность или профессия">
+      </form>
+      <div class="header__like">
+        <div class="header__like-container">
+          <button class="header__like-icon"></button>
+          <span class="header__like_counter">0</span>
+        </div>
+      </div>
+      <div class="header__user">
+        <p class="header__user-name">Екатерина</p>
+        <img class="header__user-avatar" src="./image/avatar.png" alt="Аватар профиля">
+      </div>
+
+      <!-- <div class="popup popup_opened">
+        <form class="popup__content">
+          <input class="popup__input" type="text" name="city" id="city-input" placeholder="Регион, город, населенный пункт"
+            required>
+          <div class="popup__categories"></div>
+          <ul class="popup__city-list">
+            <li class="popup__city-item">Москва</li>
+            <li class="popup__city-item">Не Москва</li>
+            <li class="popup__city-item">Москва</li>
+            <li class="popup__city-item">Не Москва</li>
+            <li class="popup__city-item">Москва</li>
+            <li class="popup__city-item">Не Москва</li>
+            <li class="popup__city-item">Москва</li>
+            <li class="popup__city-item">Не Москва</li>
+            <li class="popup__city-item">Москва</li>
+            <li class="popup__city-item">Не Москва</li>
+          </ul>
+          <button class="popup__submit-button">Сохранить</button>
+        </form>
+    
+      </div> -->
+
+    </div>
+    <nav class="header__navigation">
+      <!-- сделать список ul, как было. в li затолкать button. Сделать карусель - https://learn.javascript.ru/task/carousel -->
+      <button class="header__navigation-button navigation_universities">Вузы</button>
+      <button class="header__navigation-button navigation_colleges">Колледжи</button>
+      <button class="header__navigation-button navigation_technicals">Техникумы</button>
+      <button class="header__navigation-button navigation_schools">Училища</button>
+      <button class="header__navigation-button navigation_specialties">Cпециальности</button>
+      <button class="header__navigation-button navigation_professions">Профессии</button>
+      <button class="header__navigation-button navigation_feedbacks">Отзывы</button>
+      <button class="header__navigation-button navigation_educationalEstablishments">Учебным заведениям</button>
+      <button class="header__navigation-button navigation_test">Тест на профориентацию</button>
+      <button class="header__navigation-icon"></button>
+    </nav>
+  </header>
+<script ></script>
+
+
+</body>
+
+</html>
