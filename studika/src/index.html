@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -20,19 +20,21 @@
 
 
 
-      <div class="header__city dropdown">
+      <div class="header__city">
         <button class="header__city-icon dropbtn" onclick="myFunction()"></button>
         <p class="header__city-name">Москва</p>
-        <div id="myDropdown" class="dropdown-content">
-          <input type="text" placeholder="Регион, город, населенный пункт" id="myInput" onkeyup="filterFunction()">
-          <a href="#Moscow">Москва</a>
-          <a href="#NotMoscow">НеМосква</a>
-          <a href="#Moscow">Москва</a>
-          <a href="#NotMoscow">НеМосква</a>
-          <a href="#Moscow">Москва</a>
-          <a href="#NotMoscow">НеМосква</a>
-          <a href="#Moscow">Москва</a>
-          <a href="#NotMoscow">НеМосква</a>
+        <div id="myDropdown" class="popup__content">
+          <input type="text" placeholder="Регион, город, населенный пункт" id="filter-input" class="popup__input">
+          <ul id="filter-list">
+            <li>Москва</li>
+            <li>Санкт-Петербург</li>
+            <li>Кировск</li>
+            <li>Воронеж</li>
+            <li>Волгоград</li>
+            <li>Можайск</li>
+            <li>Екатернбург</li>
+            <li>НеМосква</li>
+          </ul>
         </div>
       </div>
 
@@ -91,7 +93,7 @@
       <button class="header__navigation-icon"></button>
     </nav>
   </header>
-<script ></script>
+<script src="./pages/index.js"></script>
 
 
 </body>
